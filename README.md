@@ -8,9 +8,9 @@ Além disso, o sistema permite **denúncias de publicações inapropriadas ou qu
 
 ### Funcionalidades prioritárias ✅
 
-- [ ] Cadastro e login de usuários (doadores e adotantes)
+- [x] Cadastro e login de usuários (doadores e adotantes) / parcial
 - [ ] Publicação de animais para adoção
-- [ ] Visualização de animais disponíveis
+- [x] Visualização de animais disponíveis
 - [ ] Denúncia de publicações inadequadas
 - [ ] Avaliação de denúncias por administradores
 - [ ] Notificações para usuários e administradores
@@ -35,13 +35,17 @@ O banco de dados utilizado é relacional e foi modelado para suportar as entidad
 
 🔗 [Visualizar modelagem de banco](https://dbdiagram.io/d/Adota-Parana-68057d471ca52373f5aaa5bd)
 
-
 ## Planejamento de Sprints 🚀
 
-| Sprint    | Período      | Tarefas                                                                 
-|-----------|--------------|--------------------------------------------------------------------------------------------|
-| Sprint 1  | Semana 1-2   | Estrutura inicial do app, criação do projeto com React Native, tela de login e cadastro    |
-| Sprint 2  | Semana 3-4   | CRUD de animais, tela de adoção, filtro de busca                                           |
-| Sprint 3  | Semana 5-6   | Sistema de denúncias (usuário e admin), notificações básicas                               |
-| Sprint 4  | Semana 7-8   | ajustes de layout, validações finais                                                       |
-| Sprint 5  | Semana 9     | Testes, correções, documentação e publicação (beta)                                        |
+| Sprint   | Período    | Tarefas                                                                                 | Checklist |
+| -------- | ---------- | --------------------------------------------------------------------------------------- | --------- |
+| Sprint 1 | Semana 1-2 | Estrutura inicial do app, criação do projeto com React Native, tela de login e cadastro | - [x]     |
+| Sprint 2 | Semana 3-4 | CRUD de animais, tela de adoção, filtro de busca                                        | - [ ]     |
+| Sprint 3 | Semana 5-6 | Sistema de denúncias (usuário e admin), notificações básicas                            | - [ ]     |
+| Sprint 4 | Semana 7-8 | ajustes de layout, validações finais                                                    | - [ ]     |
+| Sprint 5 | Semana 9   | Testes, correções, documentação e publicação (beta)                                     | - [ ]     |
+
+## Atualizações desde o último checkpoint
+
+O app conta com telas de login (mock), home (lista de animais), detalhes do animal (com opção de adoção) e adotados (favoritos). A gestão dos animais adotados é feita por meio de uma store com Zustand, que controla as funções de adotar, cancelar adoção e verificar se está adotado. Foi criado um type padrão para os animais e componentes reutilizáveis como CardAnimal para exibir informações e InterestButton para interação. A navegação é feita com expo-router e os dados dos animais são mockados para teste.
+Adicionei o nativeWind mas ainda não o utilizei (provavelmente configurei errado mas vou corrigir)
