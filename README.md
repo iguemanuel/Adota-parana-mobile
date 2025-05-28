@@ -49,3 +49,4 @@ O banco de dados utilizado é relacional e foi modelado para suportar as entidad
 
 O app conta com telas de login (mock), home (lista de animais), detalhes do animal (com opção de adoção) e adotados (favoritos). A gestão dos animais adotados é feita por meio de uma store com Zustand, que controla as funções de adotar, cancelar adoção e verificar se está adotado. Foi criado um type padrão para os animais e componentes reutilizáveis como CardAnimal para exibir informações e InterestButton para interação. A navegação é feita com expo-router e os dados dos animais são mockados para teste.
 Adicionei o nativeWind mas ainda não o utilizei (provavelmente configurei errado mas vou corrigir)
+https://www.youtube.com/shorts/NiBV0ew5mLw
